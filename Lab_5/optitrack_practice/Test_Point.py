@@ -8,7 +8,7 @@ from util import quaternion_to_euler_angle_vectorized1
 
 positions = {}
 rotations = {}
-Destination = [0, 0]
+Destination = [-2, 2]
 
 # This is a callback function that gets connected to the NatNet client. It is called once per rigid body per frame
 def receive_rigid_body_frame(robot_id, position, rotation_quaternion):
@@ -35,7 +35,7 @@ Rotate_Error = []
 # End of data for plot -------------------------
 
 if __name__ == "__main__":
-    clientAddress = "192.168.0.23"
+    clientAddress = "192.168.0.8"
     optitrackServerAddress = "192.168.0.4"
     robot_id = 211
 
